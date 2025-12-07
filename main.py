@@ -4,7 +4,6 @@ from encrypt import encrypt, decrypt
 
 DB_FILE = "database.json"
 
-# Create file if not present
 if not os.path.exists(DB_FILE):
     with open(DB_FILE, "w") as db:
         json.dump({}, db)
@@ -79,3 +78,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
